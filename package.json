@@ -1,0 +1,55 @@
+{
+  "name": "angular-directive-boilerplate",
+  "version": "0.0.8",
+  "description": "Angular Publishable Directive Boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mohsen1/angular-directive-boilerplate.git"
+  },
+  "main": "dist/china-area-selector.js",
+  "scripts": {
+    "test": "./node_modules/gulp/bin/gulp.js test"
+  },
+  "keywords": [
+    "angularjs",
+    "angular",
+    "directive"
+  ],
+  "author": {
+    "name": "Mohsen Azimi"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.10",
+    "gulp-angular-templatecache": "^1.5.0",
+    "gulp-concat": "^2.4.2",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-minify-html": "^0.1.7",
+    "gulp-util": "^3.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/mohsen1/angular-directive-boilerplate/issues"
+  },
+  "homepage": "https://github.com/mohsen1/angular-directive-boilerplate",
+  "_id": "angular-directive-boilerplate@0.0.8",
+  "_shasum": "c1403812398582dfced6552889e07889e5ccec16",
+  "_from": "angular-directive-boilerplate@0.0.*",
+  "_npmVersion": "1.4.9",
+  "_npmUser": {
+    "name": "mohsen",
+    "email": "msnazi@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "mohsen",
+      "email": "msnazi@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "c1403812398582dfced6552889e07889e5ccec16",
+    "tarball": "http://registry.npmjs.org/angular-directive-boilerplate/-/angular-directive-boilerplate-0.0.8.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/angular-directive-boilerplate/-/angular-directive-boilerplate-0.0.8.tgz"
+}

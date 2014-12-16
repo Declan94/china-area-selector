@@ -1,0 +1,1 @@
+var app = angular.module('demo', ['china-area-selector']);

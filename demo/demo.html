@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="demo">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS directive demo</title>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <link rel="stylesheet" href="demo.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-muted">Demo</h1>
+
+      <div class="usage row">
+        <h4>Simple usage</h4>
+        <p>This is a simple usage of soliury.china-area-selector</p>
+        <pre>&lt;china-area-selector&gt;&lt;/china-area-selector&gt;</pre>
+        <h4>Results</h4>
+        <china-area-selector province="province" city="city" area="area"></china-area-selector>
+      </div>
+    </div>
+
+    <script src="../dist/china-area-selector.js"></script>
+    <script src="demo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<select name="province" ng-options="province for province in provinces" ng-model="province" ng-change="change(1)">
+    <option value="">-- 选择省 --</option>
+</select>
+<select name="city" ng-options="city for city in citys" ng-model="city" ng-change="change(2)">
+    <option value="">-- 选择市 --</option>
+</select>
+<select name="area" ng-options="area for area in areas" ng-model="area">
+    <option value="">-- 选择市/区/县 --</option>
+</select>
