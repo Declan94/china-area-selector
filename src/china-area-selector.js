@@ -5,28 +5,43 @@ angular.module('china-area-selector', ['templates'])
             templateUrl: 'china-area-selector.html',
             replcae: true,
             scope: {
-                province: "=",
-                city: '=',
-                area: '='
+                region: '='
             },
-            link: function ($scope) {
-                console.log(__areaData__);
-                $scope.provinces = __areaData__.provinces || [];
-                $scope.change = function (type) {
-                    var province = __areaData__[$scope.province] || {};
+            link: function (scope) {
+                scope.provinces = __areaData__.provinces || [];
 
-                    if (type == 1) {
-                        $scope.citys = province.citys || [];
-                        $scope.city = undefined;
+                scope.$watch('region.province', function(province, old) {
+                    scope.citys = (__areaData__[province] || {}).citys || [];
+                    
+                    if (province == old) {
+                        var temp = scope.region.city;
+                        scope.region.city = '';
+                        setTimeout(function() {
+                            scope.$apply(function() {
+                                scope.region.city = temp;
+                            });
+                        });
+                    } else {
+                        scope.region.city = '';
                     }
-                    var city = province[$scope.city] || {};
-                    if (type == 2) {
-                        $scope.areas = city.areas || [];
+                });
+
+                scope.$watch('region.city', function(city, old) {
+
+                    var cityObj = (__areaData__[scope.region.province] || {})[city];
+                    scope.areas = (cityObj || {}).areas || [];
+                    if (city == old) {
+                        var temp = scope.region.area;
+                        scope.region.area = '';
+                        setTimeout(function() {
+                            scope.$apply(function() {
+                                scope.region.area = temp;
+                            });
+                        });
+                    } else {
+                        scope.region.area = '';
                     }
-                    $scope.area = undefined;
-
-                }
-
+                });
             }
         };
     }]);

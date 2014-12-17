@@ -51,5 +51,8 @@
     "tarball": "http://registry.npmjs.org/angular-directive-boilerplate/-/angular-directive-boilerplate-0.0.8.tgz"
   },
   "directories": {},
-  "_resolved": "https://registry.npmjs.org/angular-directive-boilerplate/-/angular-directive-boilerplate-0.0.8.tgz"
+  "_resolved": "https://registry.npmjs.org/angular-directive-boilerplate/-/angular-directive-boilerplate-0.0.8.tgz",
+  "dependencies": {
+    "gulp-uglify": "^1.0.2"
+  }
 }
