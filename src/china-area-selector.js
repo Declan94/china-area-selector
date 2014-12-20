@@ -7,30 +7,31 @@ angular.module('china-area-selector', ['templates'])
             scope: {
                 region: '='
             },
-            link: function (scope, elements) {
-                var $region = angular.element(elements[0]);
-                var $city = angular.element($region.find('select')[1]);
-                var $area = angular.element($region.find('select')[2]);
+            link: function (scope, element) {
+                console.log(element);
+                var $region = element['0'];
+                var $city = angular.element($region.children['1']);
+                var $area = angular.element($region.children['2']);
 
                 scope.provinces = __areaData__.provinces || [];
 
-                var getCities = function(province) {
+                var getCities = function (province) {
                     return (__areaData__[province] || {}).citys || [];
                 };
 
-                var getAreas = function(province, city) {
+                var getAreas = function (province, city) {
                     var cityObj = (__areaData__[province] || {})[city];
                     return (cityObj || {}).areas || [];
                 };
 
-                var indexOf = function(arr, ele) {
+                var indexOf = function (arr, ele) {
                     for (var i in arr)
                         if (arr[i] === ele)
                             return i;
                     return -1;
                 };
 
-                var getAdjustiveRegion = function(paramRegion) {
+                var getAdjustiveRegion = function (paramRegion) {
                     var region = angular.copy(paramRegion || {});
                     if (indexOf(scope.provinces, region.province) === -1) {
                         region.province = region.city = region.area = '';
@@ -49,14 +50,14 @@ angular.module('china-area-selector', ['templates'])
                     return region;
                 };
 
-                var showRegion = function(region) {
+                var showRegion = function (region) {
                     scope.region = getAdjustiveRegion(region);
                     // console.log("region=" + JSON.stringify(region) + " scope.region=" + JSON.stringify(scope.region));
 
                     scope.citys = getCities(scope.region.province);
                     scope.areas = getAreas(scope.region.province, scope.region.city);
 
-                    setTimeout(function() {
+                    setTimeout(function () {
                         var cityIndex = indexOf(scope.citys, scope.region.city);
                         $city.val(cityIndex > -1 ? cityIndex : '');
 
