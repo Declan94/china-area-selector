@@ -8,7 +8,6 @@ angular.module('china-area-selector', ['templates'])
                 region: '='
             },
             link: function (scope, element) {
-                console.log(element);
                 var $city = element.children().eq(1);
                 var $area = element.children().eq(2);
 
