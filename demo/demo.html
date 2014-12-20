@@ -31,7 +31,7 @@
     <script>
     var app = angular.module('demo', ['china-area-selector']);
 
-    app.controller('Ctrl' , function($scope) {
+    app.controller('Ctrl' , function($scope, $timeout) {
 
       $scope.region1 = {};
       
@@ -40,6 +40,14 @@
         city: '承德市',
         area: '承德县'
       };
+
+      $timeout(function() {
+        $scope.region2 = {
+          province: '河北省',
+          city: '承德市',
+          area: '双桥区'
+        };
+      }, 2000);
     });
     </script>
   </body>
