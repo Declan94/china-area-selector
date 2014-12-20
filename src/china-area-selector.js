@@ -49,13 +49,6 @@ angular.module('china-area-selector', ['templates'])
                     return region;
                 };
 
-                var equalRegion = function(a, b) {
-                    if (!a || !b) {
-                        return false;
-                    }
-                    return (a.province === b.province) && (a.city === b.city) && (a.area === b.area);
-                }
-
                 var showRegion = function(region) {
                     scope.region = getAdjustiveRegion(region);
                     // console.log("region=" + JSON.stringify(region) + " scope.region=" + JSON.stringify(scope.region));
