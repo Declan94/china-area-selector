@@ -9,9 +9,8 @@ angular.module('china-area-selector', ['templates'])
             },
             link: function (scope, element) {
                 console.log(element);
-                var $region = element['0'];
-                var $city = angular.element($region.children['1']);
-                var $area = angular.element($region.children['2']);
+                var $city = element.children().eq(1);
+                var $area = element.children().eq(2);
 
                 scope.provinces = __areaData__.provinces || [];
 
