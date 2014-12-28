@@ -16,8 +16,11 @@ gulp.task 'template', ->
   gulp.src './src/template/*.html'
   .pipe templateCache 'templates.js',
     standalone: true
-    module:'templates'
+    module: 'templates'
   .pipe gulp.dest('./src')
 
 
 gulp.task 'build', ['script', 'template']
+gulp.task 'watch', ['build'], ->
+  gulp.watch './scr/*.js', ['build']
+  gulp.watch './src/template/*.html', ['build']
