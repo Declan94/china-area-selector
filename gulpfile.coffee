@@ -16,7 +16,7 @@ gulp.task 'template', ->
   gulp.src './src/template/*.html'
   .pipe templateCache 'templates.js',
     standalone: true
-    module: 'templates'
+    module: '__chinaAreaSelectorTemplates__'
   .pipe gulp.dest('./src')
 
 

@@ -1,4 +1,4 @@
-angular.module('china-area-selector', ['templates'])
+angular.module('china-area-selector', ['__chinaAreaSelectorTemplates__'])
     .directive('chinaAreaSelector', ['$templateCache', function ($templateCache) {
         return {
             restrict: 'E',
@@ -72,10 +72,10 @@ angular.module('china-area-selector', ['templates'])
     .directive('chinaAreaSelectorWithWrapper', ['$templateCache', function ($templateCache) {
         return {
             restrict: 'E',
-            templateUrl: 'beautyCss.html',
+            templateUrl: 'china-area-selector-with-wrapper.html',
             replcae: true,
             scope: {
-                region: '=',
+                region: '='
             },
             link: function (scope, element) {
                 var $region = angular.element(element[0]);
