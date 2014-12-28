@@ -1,10 +1,10 @@
 {
-  "name": "angular-directive-boilerplate",
-  "version": "0.0.8",
-  "description": "Angular Publishable Directive Boilerplate",
+  "name": "china-area-selector",
+  "version": "0.0.9",
+  "description": "中国地区三级联动选择插件 for Angular.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mohsen1/angular-directive-boilerplate.git"
+    "url": "https://github.com/youshe/china-area-selector.git"
   },
   "main": "dist/china-area-selector.js",
   "scripts": {
@@ -13,10 +13,11 @@
   "keywords": [
     "angularjs",
     "angular",
-    "directive"
+    "directive",
+    "selector"
   ],
   "author": {
-    "name": "Mohsen Azimi"
+    "name": "soliury,yanxi-com"
   },
   "license": "MIT",
   "devDependencies": {
@@ -26,33 +27,17 @@
     "gulp-concat": "^2.4.2",
     "gulp-minify-css": "^0.3.11",
     "gulp-minify-html": "^0.1.7",
+    "gulp-uglify": "^1.0.2",
     "gulp-util": "^3.0.1"
   },
   "bugs": {
-    "url": "https://github.com/mohsen1/angular-directive-boilerplate/issues"
+    "url": "https://github.com/youshe/china-area-selector/issues"
   },
-  "homepage": "https://github.com/mohsen1/angular-directive-boilerplate",
-  "_id": "angular-directive-boilerplate@0.0.8",
-  "_shasum": "c1403812398582dfced6552889e07889e5ccec16",
-  "_from": "angular-directive-boilerplate@0.0.*",
-  "_npmVersion": "1.4.9",
-  "_npmUser": {
-    "name": "mohsen",
-    "email": "msnazi@gmail.com"
-  },
+  "homepage": "https://github.com/youshe/china-area-selector",
   "maintainers": [
     {
-      "name": "mohsen",
-      "email": "msnazi@gmail.com"
+      "name": "soliury",
+      "email": "hi@lingyong.me"
     }
-  ],
-  "dist": {
-    "shasum": "c1403812398582dfced6552889e07889e5ccec16",
-    "tarball": "http://registry.npmjs.org/angular-directive-boilerplate/-/angular-directive-boilerplate-0.0.8.tgz"
-  },
-  "directories": {},
-  "_resolved": "https://registry.npmjs.org/angular-directive-boilerplate/-/angular-directive-boilerplate-0.0.8.tgz",
-  "dependencies": {
-    "gulp-uglify": "^1.0.2"
-  }
+  ]
 }
