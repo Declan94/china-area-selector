@@ -40,6 +40,8 @@ app.controller('Ctrl' , function($scope) {
 
 而对于北京市等直辖市的市辖区直接以北京市代替。
 
+对于`china-area-selector-with-wrapper`，适用于wap，或者需要自己定义显示的时候，这个会比较方便。
+
 详见 Demo 页面
 
 ### License

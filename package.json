@@ -1,6 +1,6 @@
 {
   "name": "china-area-selector",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "中国地区三级联动选择插件 for Angular.js",
   "repository": {
     "type": "git",
@@ -28,7 +28,8 @@
     "gulp-minify-css": "^0.3.11",
     "gulp-minify-html": "^0.1.7",
     "gulp-uglify": "^1.0.2",
-    "gulp-util": "^3.0.1"
+    "gulp-util": "^3.0.1",
+    "run-sequence": "^1.0.2"
   },
   "bugs": {
     "url": "https://github.com/youshe/china-area-selector/issues"
