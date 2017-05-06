@@ -4,7 +4,6 @@
   "description": "",
   "main": "dist/china-area-selector.js",
   "license": "MIT",
-  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,5 +14,17 @@
   ],
   "devDependencies": {
     "angular": "^1.6.0"
-  }
+  },
+  "homepage": "https://github.com/Declan94/china-area-selector",
+  "authors": [
+    "陈晔 <chenye94@qq.com>"
+  ],
+  "keywords": [
+    "angular",
+    "china",
+    "area",
+    "selector",
+    "cities",
+    "provinces"
+  ]
 }
