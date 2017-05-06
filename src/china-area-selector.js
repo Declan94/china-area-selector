@@ -55,13 +55,13 @@ angular.module('china-area-selector', ['__chinaAreaSelectorTemplates__'])
                     scope.citys = getCities(scope.region.province);
                     scope.areas = getAreas(scope.region.province, scope.region.city);
 
-                    setTimeout(function () {
-                        var cityIndex = indexOf(scope.citys, scope.region.city);
-                        $city.val(cityIndex > -1 ? cityIndex : '');
-
-                        var areaIndex = indexOf(scope.areas, scope.region.area);
-                        $area.val(areaIndex > -1 ? areaIndex : '');
-                    });
+                    //setTimeout(function () {
+                    //    var cityIndex = indexOf(scope.citys, scope.region.city);
+                    //    $city.val(cityIndex > -1 ? cityIndex : '');
+                    //
+                    //    var areaIndex = indexOf(scope.areas, scope.region.area);
+                    //    $area.val(areaIndex > -1 ? areaIndex : '');
+                    //});
                 };
 
                 scope.$watch('region', showRegion, true);
@@ -145,14 +145,14 @@ angular.module('china-area-selector', ['__chinaAreaSelectorTemplates__'])
                     scope.areas = getAreas(scope.region.province, scope.region.city);
                     setShowValue(region);
 
-                    setTimeout(function () {
-                        var cityIndex = indexOf(scope.citys, scope.region.city);
-                        $city.val(cityIndex > -1 ? cityIndex : '');
-
-
-                        var areaIndex = indexOf(scope.areas, scope.region.area);
-                        $area.val(areaIndex > -1 ? areaIndex : '');
-                    });
+                    //setTimeout(function () {
+                    //    var cityIndex = indexOf(scope.citys, scope.region.city);
+                    //    $city.val(cityIndex > -1 ? cityIndex : '');
+                    //
+                    //
+                    //    var areaIndex = indexOf(scope.areas, scope.region.area);
+                    //    $area.val(areaIndex > -1 ? areaIndex : '');
+                    //});
                 };
 
                 scope.$watch('region', showRegion, true);

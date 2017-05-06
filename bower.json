@@ -1,6 +1,6 @@
 {
-  "name": "china-area-selector",
-  "version": "0.0.8",
+  "name": "china-area-selector-n",
+  "version": "0.1",
   "description": "",
   "main": "dist/china-area-selector.js",
   "license": "MIT",
@@ -14,6 +14,6 @@
     "npm-debug.log"
   ],
   "devDependencies": {
-    "angular": "~1.3.4"
+    "angular": "^1.6.0"
   }
 }
